@@ -1,3 +1,4 @@
+
 /*
 background purple: #540B51
 background ivory: #F3EAE2
@@ -8,3 +9,41 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+/* codes are done based on a general weidth of 768px
+if we will be adapting it to pc, using @mesure */
+
+/* General styling everywheer */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+*{
+    font-family: Oswald, sans-serif;
+    width: 768px;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: pink;
+    font-style:;
+}
+
+/* Navigation bar section */
+.navigationBar{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 10px;
+    justify-content: space-between;
+}
+
+
+nav div{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+} 
