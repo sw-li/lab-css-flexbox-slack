@@ -37,10 +37,15 @@ body{
 /* define default font size */
 
 h1{
-    font-size: 7em;
+    font-size: 6em;
+    margin:0;
 }
 p{
     font-size: 2rem;
+}
+
+.whiteTxt{
+    color: white;
 }
 
 /* Navigation bar section */
@@ -64,7 +69,7 @@ nav div{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 40px;
+    padding: 30px;
 }
 
 .slackLogo{
@@ -73,14 +78,14 @@ nav div{
 } 
 
 
-button{
+nav button{
     background-color: #540B51;
     display: flex;
     flex-flow: row nowrap;
     border: none;
     color: #540B51;
     font-size: 80px;
-    padding: 20px;
+    padding: 20px 0;
 }
 button>img{
     height: 0.5em;
@@ -92,7 +97,62 @@ header{
     background-color:#540B51;
     display: flex;
     flex-flow: row wrap;
+    gap: 50px;
 }
+
+.headLeft{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.headRight >img{
+    object-fit: scale-down;
+}
+
+#slogan,
+#slogan + p{
+    text-align: center;
+    color: white;
+}
+
+header button{
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 680px;
+    height: 70px;
+    margin: 10px;
+    padding: 7px;
+}
+
+.linkButtons{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#whiteButton{
+    background-color: white;
+}
+
+#blueButton{
+    background-color: #4285F4;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 210px;
+    align-items: center;
+}
+
+
+img[src*="google"]{
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+    height: 50px;
+}
+
+
 /* main */
 main{
     background-color:#F3EAE2;
@@ -109,6 +169,8 @@ and (max-device-width:1024px)
 
 @media only screen 
 and (min-device-width:1025px)
+and (max-device-width:1440)
+
 {
     .menuList{
         flex-grow: 1;
@@ -120,4 +182,15 @@ and (min-device-width:1025px)
         justify-content: space-around;
         align-items: flex-end;
     } 
+}
+
+
+@media only screen 
+and (min-device-width:1441px)
+{
+    .linkButtons{
+        display: flex;
+        flex-flow: row wrap;
+    
+    }
 }
