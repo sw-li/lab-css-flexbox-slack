@@ -50,8 +50,7 @@ h2{
 h3{
     font-size: 4em;
     margin:0;
-    text-align: center;
-    padding: 100px;
+    padding: 60px;
 }
 
 p{
@@ -61,6 +60,24 @@ p{
 .whiteTxt{
     color: white;
 }
+
+.txtCentered{
+    text-align:center;
+}
+
+.txtJustified{
+    text-align:justify;
+}
+
+button{
+    border-radius: 5px;
+    font-size: 20px;
+    width: 680px;
+    height: 70px;
+    margin: 10px;
+    padding: 7px;
+}
+
 
 /* Navigation bar section */
 nav{
@@ -91,7 +108,6 @@ nav div{
     height: 3em;
 } 
 
-
 nav button{
     background-color: #540B51;
     display: flex;
@@ -101,6 +117,7 @@ nav button{
     font-size: 80px;
     padding: 20px 0;
 }
+
 button>img{
     height: 0.5em;
 }
@@ -124,24 +141,10 @@ header{
     overflow: hidden;
 }
 
-.headRight >img{
-    object-fit: scale-down;
-}
-
 #slogan,
 #slogan + p{
     text-align: center;
     color: white;
-}
-
-header button{
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    width: 680px;
-    height: 70px;
-    margin: 10px;
-    padding: 7px;
 }
 
 .linkButtons{
@@ -151,6 +154,7 @@ header button{
 }
 
 #whiteButton{
+    border: none;
     background-color: white;
 }
 
@@ -160,6 +164,7 @@ header button{
     flex-flow: row nowrap;
     gap: 210px;
     align-items: center;
+    border: none;
 }
 
 
@@ -180,32 +185,111 @@ main{
     align-items: center;
 }
 
-
 main > section {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     align-items: center;
+    justify-content: space-between;
 }
 
 .reversed {
     display: flex;
-    flex-direction: column-reverse;
+    flex: row-reverse wrap;
     align-items: center;
 }
 
+main > section p{
+    width: 700px;
+    font-weight:lighter;
+    padding: 0 34px;
+    margin: 0;
+}
+
+main > section h2 {
+    width: 700px;
+    padding:35px;
+}
+
+.partenerLogos{
+    padding: 30px;
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.partenerLogos > img {
+    height: 4em;
+    padding: 20px;
+}
+
+.pateners{
+    font-weight: 400;
+}
+
+#pateners{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+
 .stats{
     background-color: white;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+    margin: -1px;
+    padding: 0 0 50px 0;
 }
 
 .stats p{
     font-size: 2em;
 }
 
+.mainVioletButton{
+    background-color:#540B51;
+    align-items: center;
+    border: solid;
+    border-color: white;
+    color: white;
+    text-transform: uppercase;
+}
+
+.mainWhiteButton{
+    background-color:white;
+    align-items: center;
+    border: solid;
+    color:#540B51;
+    text-transform: uppercase;
+}
+
 main div{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     box-sizing: content-box;
+    /* width: 768px; */
+}
+
+.narrowStats{
+    width: 250px;
+}
+
+.percentage{
+    font-size: 2em;
+    font-weight: 400;
+    color: #540B51;
+}
+
+main ul{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    justify-content: space-evenly;
+}
+main ul li{
+    width: 300px;
+    margin: 0;
 }
 
 .txtBlock{
@@ -228,40 +312,38 @@ main div{
 
 .imgBlock{
     height: 700px;
-    scale: 0.46;
     padding: 20px 0;
+    overflow: hidden;
 }
 
-main > section p{
-    width: 700px;
-    font-weight:lighter;
-    text-align:justify;
-    margin: 30px;
-}
-.pateners{
-    font-weight: 400;
+.imgBlock img{
+    display: block;
+    max-height: 95%;
+    max-width: 95%;
 }
 
-main > section h2 {
-    width: 700px;
-    padding:35px;
+.stickLeft {
+    align-self: flex-start;
 }
 
-.partenerLogos{
-    padding: 30px;
-    width: auto;
-    display: flex;
-    flex-flow: row wrap;
+.stickRight {
+    align-self: flex-end;
 }
 
-.partenerLogos > img {
-    height: 4em;
-    padding: 20px;
+
+
+
+
+
+#mainVioletSection{
+    background-color: #540B51;
 }
 
 
 
 /* footer */
+
+
 
 
 @media only screen 
