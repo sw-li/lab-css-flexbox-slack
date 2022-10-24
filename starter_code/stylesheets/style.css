@@ -35,6 +35,14 @@ body{
     min-width: 768px;
 }
 
+.whiteBackground{
+    background-color: white;
+}
+
+.beigeBackground{
+    background-color:#F3EAE2;
+}
+
 /* define default font size */
 
 h1{
@@ -53,6 +61,10 @@ h3{
     padding: 60px;
 }
 
+ul{
+    padding-inline-start: 0;
+}
+
 p{
     font-size: 3em;
 }
@@ -63,6 +75,7 @@ p{
 
 .txtCentered{
     text-align:center;
+    align-self: center;
 }
 
 .txtJustified{
@@ -70,7 +83,7 @@ p{
 }
 
 button{
-    border-radius: 5px;
+    border-radius: 2px;
     font-size: 20px;
     width: 680px;
     height: 70px;
@@ -116,6 +129,7 @@ nav button{
     color: #540B51;
     font-size: 80px;
     padding: 20px 0;
+    width: 50px;
 }
 
 button>img{
@@ -162,8 +176,8 @@ header{
     background-color: #4285F4;
     display: flex;
     flex-flow: row nowrap;
-    gap: 210px;
     align-items: center;
+    justify-content:space-between;
     border: none;
 }
 
@@ -175,6 +189,9 @@ img[src*="google"]{
     height: 50px;
 }
 
+#placeHolder{
+    width: 50px;
+}
 
 /* main */
 main{
@@ -185,11 +202,12 @@ main{
     align-items: center;
 }
 
-main > section {
+main  section {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
+    width: 100vw;
 }
 
 .reversed {
@@ -198,14 +216,14 @@ main > section {
     align-items: center;
 }
 
-main > section p{
+main  section p{
     width: 700px;
     font-weight:lighter;
     padding: 0 34px;
     margin: 0;
 }
 
-main > section h2 {
+main  section h2 {
     width: 700px;
     padding:35px;
 }
@@ -239,6 +257,7 @@ main > section h2 {
     flex-grow: 1;
     margin: -1px;
     padding: 0 0 50px 0;
+    width: 100vw;
 }
 
 .stats p{
@@ -249,6 +268,7 @@ main > section h2 {
     background-color:#540B51;
     align-items: center;
     border: solid;
+    border-width: 1px;
     border-color: white;
     color: white;
     text-transform: uppercase;
@@ -257,6 +277,7 @@ main > section h2 {
 .mainWhiteButton{
     background-color:white;
     align-items: center;
+    border-width: 1px;
     border: solid;
     color:#540B51;
     text-transform: uppercase;
@@ -284,12 +305,14 @@ main div{
 main ul{
     display: flex;
     flex-flow: row wrap;
-    margin: 0;
+    margin: 100px;
     justify-content: space-evenly;
+    width: 100vw;
 }
 main ul li{
     width: 300px;
     margin: 0;
+    padding: 50px;
 }
 
 .txtBlock{
@@ -330,21 +353,105 @@ main ul li{
     align-self: flex-end;
 }
 
-
-
-
-
-
 #mainVioletSection{
     background-color: #540B51;
+    flex-direction: column;
+    width: 100vw;
+    padding: 0 0 100px;
+    
 }
 
-
+main  section >div{
+    display: flex;
+    flex-flow: row wrap;
+}
 
 /* footer */
 
+footer{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+footer img{
+    align-self: flex-start;
+    width: 50px;
+    height: 50px;
+    padding: 5vw;
+}
 
 
+.links{
+    width: 90vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+footer li{
+    font-weight: lighter;
+    text-align: left;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.terms{
+    width: 90vw;
+    border-style: solid;
+    border-color:#454245;
+    border-width: 1px 0 0 0;
+    padding-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin:0;
+}
+
+.socialMedia{
+    align-self: flex-start;
+    padding-left: 5vw;
+    width: 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+small{
+    width: 90vw;
+    align-self: flex-start;
+    font-size: 0.65em;
+    font-weight:lighter;
+    margin:0;
+    padding: 0;
+}
+
+#legalMention{
+    align-self: flex-start;
+    margin-left: 5vw;
+}
+
+@media only screen 
+and (max-device-width:768px)
+{
+    button{
+        width: 80vw;
+    }
+    main  section p{
+        width: 90vw;
+        font-weight:lighter;
+        padding: 0 34px;
+        margin: 0;
+    }
+    
+    main  section h2 {
+        width: 90vw;
+        padding:35px;
+    }
+
+}
 
 @media only screen 
 and (min-device-width:769px)
@@ -378,5 +485,13 @@ and (min-device-width:1441px)
         display: flex;
         flex-flow: row wrap;
     
+    }
+
+    main section {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 80vw;
     }
 }

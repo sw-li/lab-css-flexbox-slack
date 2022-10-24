@@ -65,10 +65,10 @@
 
       <div class="linkButtons">
         <button id="whiteButton">Sign up with email</button>
-
         <button id="blueButton">
           <img src="./images/logo-google.png" alt="Google logo" />
           <span class="whiteTxt">Sign up with Google</span>
+          <span id="placeHolder"> </span>
         </button>
       </div>
 
@@ -80,6 +80,7 @@
   </header>
 
   <main>
+    <div class="beigeBackground">
     <section id="pateners">
       <div><p class="pateners">Trusted by companies all over the world</p>
       </div>
@@ -185,20 +186,26 @@
         </li>
       </ul>
     </section>
+  </div>
 
+  <div class="whiteBackground">
     <section id="mainVioletSection">
-      <h3>Welcome to your new digital HQ</h3>
-      <button class="mainVioletButton">Try for free</button>
-      <button class="mainWhiteButton">Talk to sales</button>
+      <h3 class="whiteTxt">Welcome to your new digital HQ</h3>
+      <div>
+        <button class="mainVioletButton">Try for free</button>
+        <button class="mainWhiteButton">Talk to sales</button>
+      </div>
     </section>
+  </div>
+    
 
   </main>
 
   <footer>
     <img src="./images/iso-slack.png" alt="Slack logo" />
-    <div>
+    <div class="links">
       <ul>
-        <li>WHY SLACK?</li>
+        <li class="bold">WHY SLACK?</li>
         <li>Slack vs. Email</li>
         <li>Channels</li>
         <li>Engagement</li>
@@ -207,7 +214,7 @@
       </ul>
 
       <ul>
-        <li>PRODUCT</li>
+        <li class="bold">PRODUCT</li>
         <li>Features</li>
         <li>Integrations</li>
         <li>Enterprise</li>
@@ -216,13 +223,13 @@
       </ul>
 
       <ul>
-        <li>PRICING</li>
+        <li class="bold">PRICING</li>
         <li>Plans</li>
         <li>Paid vs. Free</li>
       </ul>
 
       <ul>
-        <li>COMPANY</li>
+        <li class="bold">COMPANY</li>
         <li>About Us</li>
         <li>Leadership</li>
         <li>Investor Relations</li>
@@ -233,7 +240,7 @@
     </div>
 
 
-    <ul>
+    <ul class="terms">
       <li>Status</li>
       <li>Privacy</li>
       <li>Terms</li>
@@ -245,7 +252,7 @@
 
     <hr>
 
-    <ul>
+    <ul class="socialMedia">
       <li>
         <i class="fab fa-twitter"></i>
       </li>
@@ -260,7 +267,7 @@
       </li>
     </ul>
 
-    <div>
+    <div id="legalMention">
       <small>
         &copy; 2022 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by
         their respective owners.
